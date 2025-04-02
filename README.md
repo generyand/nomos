@@ -13,10 +13,12 @@ Nomos is a sophisticated legal document analysis tool that leverages artificial 
 
 ## Tech Stack
 
-- **Frontend**: Next.js 15, React 19, TypeScript, TailwindCSS
-- **Backend**: Node.js, Express.js, TypeScript
+- **Framework**: Next.js 15 with App Router
+- **Language**: TypeScript
+- **Styling**: TailwindCSS
 - **Database**: PostgreSQL (via Supabase)
 - **ORM**: Prisma
+- **Authentication**: NextAuth.js
 
 ## Getting Started
 
@@ -37,59 +39,60 @@ Nomos is a sophisticated legal document analysis tool that leverages artificial 
 2. Install dependencies
 
    ```
-   # Install client dependencies
-   cd client
-   npm install
-
-   # Install server dependencies
-   cd ../server
    npm install
    ```
 
 3. Configure environment variables
 
    ```
-   # In server directory
    cp .env.example .env
    # Add your Supabase and other configuration details
+   ```
 
-   # In client directory
-   cp .env.example .env
-   # Add your frontend environment variables
+4. Set up the database
+
+   ```
+   npx prisma generate
+   npx prisma db push
    ```
 
 ## Development
 
-1. Start the backend server
+1. Start the development server
 
    ```
-   cd server
    npm run dev
    ```
 
-2. Start the frontend development server
-
-   ```
-   cd client
-   npm run dev
-   ```
-
-3. Open [http://localhost:3000](http://localhost:3000) in your browser
+2. Open [http://localhost:3000](http://localhost:3000) in your browser
 
 ## Building for Production
 
-1. Build the backend
+1. Build the application
 
    ```
-   cd server
    npm run build
    ```
 
-2. Build the frontend
+2. Start the production server
+
    ```
-   cd client
-   npm run build
+   npm start
    ```
+
+## Project Structure
+
+```
+nomos/
+├── app/                    # Next.js app directory
+│   ├── api/               # API routes
+│   ├── (auth)/            # Authentication pages
+│   └── (dashboard)/       # Dashboard pages
+├── components/            # React components
+├── lib/                   # Utility functions and shared logic
+├── prisma/               # Database schema and migrations
+└── public/               # Static assets
+```
 
 ## Documentation
 
