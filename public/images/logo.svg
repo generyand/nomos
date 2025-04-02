@@ -1,0 +1,56 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Scales of justice with circuit board roots -->
+  <g fill="#1a3b5d">
+    <!-- Center stem -->
+    <path d="M100 20 L100 100" stroke="#1a3b5d" stroke-width="4" stroke-linecap="round"/>
+    
+    <!-- Top point -->
+    <circle cx="100" cy="20" r="6" />
+    
+    <!-- Cross bar -->
+    <path d="M70 40 L130 40" stroke="#1a3b5d" stroke-width="4" stroke-linecap="round"/>
+    
+    <!-- Left scale bowl -->
+    <path d="M50 80 C35 60, 65 60, 50 80 Z" stroke="#1a3b5d" stroke-width="4" fill="none"/>
+    
+    <!-- Right scale bowl -->
+    <path d="M150 80 C135 60, 165 60, 150 80 Z" stroke="#1a3b5d" stroke-width="4" fill="none"/>
+    
+    <!-- Left scale arm -->
+    <path d="M70 40 L50 65" stroke="#1a3b5d" stroke-width="4" stroke-linecap="round"/>
+    
+    <!-- Right scale arm -->
+    <path d="M130 40 L150 65" stroke="#1a3b5d" stroke-width="4" stroke-linecap="round"/>
+    
+    <!-- Circuit lines -->
+    <path d="M100 100 L70 120" stroke="#1a3b5d" stroke-width="3" stroke-linecap="round"/>
+    <path d="M100 100 L130 120" stroke="#1a3b5d" stroke-width="3" stroke-linecap="round"/>
+    <path d="M70 120 L50 140" stroke="#1a3b5d" stroke-width="3" stroke-linecap="round"/>
+    <path d="M70 120 L90 140" stroke="#1a3b5d" stroke-width="3" stroke-linecap="round"/>
+    <path d="M130 120 L110 140" stroke="#1a3b5d" stroke-width="3" stroke-linecap="round"/>
+    <path d="M130 120 L150 140" stroke="#1a3b5d" stroke-width="3" stroke-linecap="round"/>
+    <path d="M50 140 L40 160" stroke="#1a3b5d" stroke-width="2" stroke-linecap="round"/>
+    <path d="M50 140 L60 160" stroke="#1a3b5d" stroke-width="2" stroke-linecap="round"/>
+    <path d="M90 140 L80 160" stroke="#1a3b5d" stroke-width="2" stroke-linecap="round"/>
+    <path d="M90 140 L100 160" stroke="#1a3b5d" stroke-width="2" stroke-linecap="round"/>
+    <path d="M110 140 L120 160" stroke="#1a3b5d" stroke-width="2" stroke-linecap="round"/>
+    <path d="M150 140 L140 160" stroke="#1a3b5d" stroke-width="2" stroke-linecap="round"/>
+    <path d="M150 140 L160 160" stroke="#1a3b5d" stroke-width="2" stroke-linecap="round"/>
+    
+    <!-- Circuit nodes -->
+    <circle cx="100" cy="100" r="5" />
+    <circle cx="70" cy="120" r="4" />
+    <circle cx="130" cy="120" r="4" />
+    <circle cx="50" cy="140" r="4" />
+    <circle cx="90" cy="140" r="4" />
+    <circle cx="110" cy="140" r="4" />
+    <circle cx="150" cy="140" r="4" />
+    <circle cx="40" cy="160" r="3" />
+    <circle cx="60" cy="160" r="3" />
+    <circle cx="80" cy="160" r="3" />
+    <circle cx="100" cy="160" r="3" />
+    <circle cx="120" cy="160" r="3" />
+    <circle cx="140" cy="160" r="3" />
+    <circle cx="160" cy="160" r="3" />
+  </g>
+</svg> 
