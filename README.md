@@ -1,7 +1,7 @@
 # Nomos - AI-Powered Legal Document Analyzer
 
 <div align="center">
-  <img src="public/nomos-logo.png" alt="Nomos Logo" width="200" height="auto" style="border-radius: 12px;">
+  <img src="public/nomos-logo.png" alt="Nomos Logo" width="200" height="auto">
 </div>
 
 Nomos is a sophisticated legal document analysis tool that leverages artificial intelligence to streamline the process of reviewing, analyzing, and extracting insights from legal documents.
