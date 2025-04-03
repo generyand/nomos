@@ -32,10 +32,10 @@ const Navbar = () => {
         <Link href="/" className="flex items-center gap-2">
           <div className="relative h-10 w-10">
             <Image
-              src="/images/logo.svg"
+              src="/nomos-logo.png"
               alt="Nomos Logo"
               fill
-              className="object-contain"
+              className="object-contain rounded-lg"
               priority
             />
           </div>

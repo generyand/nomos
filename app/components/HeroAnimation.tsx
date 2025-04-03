@@ -34,17 +34,17 @@ export default function HeroAnimation() {
     handleResize();
     
     // Initialize points
-    const numPoints = 50;
+    const numPoints = 40; // Reduced number of points
     const points: Point[] = [];
     
     for (let i = 0; i < numPoints; i++) {
       points.push({
         x: Math.random() * canvas.width,
         y: Math.random() * canvas.height,
-        vx: (Math.random() - 0.5) * 0.5,
-        vy: (Math.random() - 0.5) * 0.5,
-        size: Math.random() * 2 + 1,
-        color: '#c5d8f0'
+        vx: (Math.random() - 0.5) * 0.3, // Slower movement
+        vy: (Math.random() - 0.5) * 0.3, // Slower movement
+        size: Math.random() * 1.5 + 0.5, // Smaller points
+        color: '#1a365d' // Darker color
       });
     }
     
@@ -83,8 +83,9 @@ export default function HeroAnimation() {
             ctx.lineTo(otherPoint.x, otherPoint.y);
             
             const opacity = 1 - distance / 100;
-            ctx.strokeStyle = `rgba(197, 216, 240, ${opacity * 0.2})`;
-            ctx.lineWidth = 1;
+            // Reduced opacity for connections
+            ctx.strokeStyle = `rgba(26, 54, 93, ${opacity * 0.15})`;
+            ctx.lineWidth = 0.8;
             ctx.stroke();
           }
         });
@@ -104,8 +105,8 @@ export default function HeroAnimation() {
   return (
     <canvas
       ref={canvasRef}
-      className="absolute inset-0 w-full h-full opacity-40"
-      style={{ mixBlendMode: 'lighten' }}
+      className="absolute inset-0 w-full h-full opacity-25 z-[1]"
+      style={{ mixBlendMode: 'soft-light' }}
     />
   );
 } 

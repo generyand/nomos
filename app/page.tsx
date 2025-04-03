@@ -32,38 +32,39 @@ export default function Home() {
       <Navbar />
       
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-primary-dark to-primary text-white relative overflow-hidden">
+      <section className="bg-gradient-to-br from-primary-dark via-primary to-secondary text-white relative overflow-hidden">
+        <div className="absolute inset-0 bg-black/30 z-0"></div>
         <div className="absolute inset-0">
           <HeroAnimation />
         </div>
         <div className="container mx-auto px-6 py-24 md:py-32 flex flex-col md:flex-row items-center relative z-10">
           <div className="md:w-1/2 md:pr-10 mb-10 md:mb-0">
-            <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-4">
+            <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-4 text-white drop-shadow-sm">
               AI-Powered Legal<br />Document Analysis
             </h1>
-            <p className="text-xl mb-8 text-blue-100">
+            <p className="text-xl mb-8 text-white/90 drop-shadow-sm">
               Streamline your legal workflow with advanced artificial intelligence that extracts insights, identifies risks, and transforms complex documents into actionable intelligence.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link href="/demo" className="bg-white text-primary hover:bg-blue-50 font-semibold py-3 px-8 rounded-lg transition duration-300 text-center">
+              <Link href="/demo" className="bg-white text-primary hover:bg-blue-50 font-semibold py-3 px-8 rounded-lg transition duration-300 text-center shadow-md">
                 Request Demo
               </Link>
-              <Link href="/pricing" className="bg-transparent border-2 border-white text-white hover:bg-white/10 font-semibold py-3 px-8 rounded-lg transition duration-300 text-center">
+              <Link href="/pricing" className="bg-transparent border-2 border-white text-white hover:bg-white/10 font-semibold py-3 px-8 rounded-lg transition duration-300 text-center shadow-sm">
                 Pricing
               </Link>
             </div>
           </div>
           <div className="md:w-1/2 flex justify-center md:justify-end">
-            <div className="relative w-full max-w-lg">
-              <div className="absolute -top-5 -left-5 w-72 h-72 bg-secondary rounded-full mix-blend-multiply filter blur-2xl opacity-30 animate-blob"></div>
-              <div className="absolute -bottom-5 -right-5 w-72 h-72 bg-secondary-light rounded-full mix-blend-multiply filter blur-2xl opacity-30 animate-blob animation-delay-2000"></div>
-              <div className="relative">
+            <div className="relative w-3/5 max-w-lg">
+              <div className="absolute -top-5 -left-5 w-72 h-72 bg-secondary/60 rounded-full mix-blend-soft-light filter blur-2xl opacity-60 animate-blob"></div>
+              <div className="absolute -bottom-5 -right-5 w-72 h-72 bg-secondary-light/60 rounded-full mix-blend-soft-light filter blur-2xl opacity-60 animate-blob animation-delay-2000"></div>
+              <div className="relative bg-white/10 backdrop-blur-sm px-4 py-6 rounded-2xl shadow-xl">
                 <Image 
-                  src="/images/logo.svg" 
+                  src="/nomos-logo.png" 
                   alt="Nomos Platform" 
                   width={400} 
-                  height={300} 
-                  className="relative rounded-xl p-8" 
+                  height={300}
+                  className="relative rounded-2xl shadow-lg w-full h-auto object-contain" 
                 />
               </div>
             </div>
@@ -167,7 +168,7 @@ export default function Home() {
           <div className="flex flex-col md:flex-row justify-between">
             <div className="mb-8 md:mb-0">
               <div className="flex items-center gap-2 mb-4">
-                <Image src="/images/logo.svg" alt="Nomos Logo" width={40} height={40} className="text-white" />
+                <Image src="/nomos-logo.png" alt="Nomos Logo" width={40} height={40} className="text-white rounded-lg" />
                 <span className="font-bold text-2xl text-white tracking-tight">NOMOS</span>
               </div>
               <p className="max-w-xs">AI-powered legal document analysis for the modern legal professional.</p>
