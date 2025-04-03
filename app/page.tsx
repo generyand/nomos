@@ -41,10 +41,7 @@ export default function Home() {
       <Navbar />
       
       {/* Hero Section */}
-      <section className="relative min-h-[90vh] bg-gradient-to-br from-slate-900 via-primary to-primary-dark text-white overflow-hidden">
-        {/* Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/20 to-transparent z-0"></div>
-        
+      <section className="relative min-h-[90vh] bg-slate-900 text-white overflow-hidden">
         {/* Background Pattern */}
         <div className="absolute inset-0 opacity-5">
           <div className="absolute inset-0" style={{ 
@@ -70,8 +67,8 @@ export default function Home() {
                   <p className="text-sm font-medium text-white/90">Powered by Advanced AI Technology</p>
                 </div>
                 
-                <h1 className="text-5xl md:text-7xl font-bold tracking-tight">
-                  <span className="block bg-clip-text text-white drop-shadow-sm">
+                <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold tracking-tight">
+                  <span className="block text-white drop-shadow-sm">
                     AI-Powered Legal
                   </span>
                   <span className="block mt-2 text-white relative">
@@ -87,8 +84,8 @@ export default function Home() {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white font-semibold shadow-xl hover:shadow-secondary/25 transition-all duration-300">
-                  <Link href="/demo" className="flex items-center gap-2">
+                <Button size="lg" className="w-full sm:w-auto bg-secondary hover:bg-secondary/90 text-white font-semibold shadow-xl hover:shadow-secondary/25 transition-all duration-300">
+                  <Link href="/demo" className="flex items-center justify-center gap-2">
                     Request Demo
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="ml-1">
                       <path d="M5 12h14"></path>
@@ -96,25 +93,15 @@ export default function Home() {
                     </svg>
                   </Link>
                 </Button>
-                <Button size="lg" variant="outline" className="border-2 border-white/20 bg-white/5 backdrop-blur-sm text-white hover:bg-white/10 font-semibold">
+                <Button size="lg" variant="outline" className="w-full sm:w-auto border-2 border-white/20 bg-white/5 backdrop-blur-sm text-white hover:bg-white/10 font-semibold">
                   <Link href="/pricing">View Pricing</Link>
                 </Button>
               </div>
 
-              {/* Trust Badges */}
-              <div className="pt-8 border-t border-white/10">
-                <p className="text-sm text-white/60 mb-4">Trusted by leading law firms worldwide</p>
-                <div className="flex flex-wrap gap-6 items-center">
-                  {/* Replace these with actual client logos */}
-                  <div className="h-8 w-24 bg-white/10 rounded-md backdrop-blur-sm"></div>
-                  <div className="h-8 w-24 bg-white/10 rounded-md backdrop-blur-sm"></div>
-                  <div className="h-8 w-24 bg-white/10 rounded-md backdrop-blur-sm"></div>
-                </div>
-              </div>
             </div>
 
-            {/* Right Content - Hero Image/Animation */}
-            <div className="md:w-1/2 flex justify-center md:justify-end">
+            {/* Right Content - Hero Image/Animation - Hidden on mobile */}
+            <div className="hidden md:flex md:w-1/2 justify-center md:justify-end">
               <div className="relative w-full max-w-lg">
                 {/* Animated Blobs */}
                 <div className="absolute top-0 -left-4 w-72 h-72 bg-secondary/30 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
@@ -148,8 +135,8 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Bottom Wave */}
-        <div className="absolute bottom-0 left-0 right-0">
+        {/* Bottom Wave - Only visible on desktop */}
+        <div className="absolute -bottom-24 left-0 right-0 hidden md:block">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" className="w-full">
             <path fill="#f8fafc" fillOpacity="1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,112C672,96,768,96,864,112C960,128,1056,160,1152,160C1248,160,1344,128,1392,112L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
           </svg>
