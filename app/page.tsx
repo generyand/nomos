@@ -6,7 +6,6 @@ import { Button } from "@/app/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/app/components/ui/card";
 import { HoverCard, HoverCardContent, HoverCardTrigger } from "@/app/components/ui/hover-card";
 import { Separator } from "@/app/components/ui/separator";
-import { ScrollArea } from "@/app/components/ui/scroll-area";
 
 export default function Home() {
   const features = [
